@@ -63,3 +63,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Used to create authentication
 gem 'devise'
+
+# Used to seed fake profiles
+gem 'faker'
