@@ -10,6 +10,7 @@ GolfCourse.destroy_all
 puts 'Creating more users (phew)...'
 
 # Adding Users to database
+
 user1 = User.create!(
   first_name: Faker::Name.first_name,
   last_name: Faker::Name.last_name,
@@ -41,32 +42,77 @@ user3 = User.create!(
 )
 
 # Adding Buddies to database
+
 friend1 = Buddy.create!(
   user: user1,
-  golf_course: 'Pebble Beach'
+  golf_course: pebble_beach
 )
 
 friend2 = Buddy.create!(
   user: user1,
-  golf_course: 'Spy Glass'
+  golf_course: spy_glass
 )
 
 friend3 = Buddy.create!(
   user: user1,
-  golf_course: 'Edgewood'
+  golf_course: edgewood
 )
 
 friend4 = Buddy.create!(
   user: user1,
-  golf_course: 'Coyote Moon'
+  golf_course: coyote_moon
 )
 
 friend5 = Buddy.create!(
   user: user1,
-  golf_course: 'Olympic Club'
+  golf_course: olympic_club
 )
 
 friend6 = Buddy.create!(
   user: user1,
-  golf_course: 'Riveria Country Club'
+  golf_course: riveria_country_club
+)
+
+#Adding Golf Courses to database
+
+pebble_beach = GolfCourse.create!(
+  location: "Pebble Beach Resorts, 17-Mile Drive, Pebble Beach, CA 93953"
+  name: "Pebble Beach"
+  par: 72
+  review: "Amazing Course"
+)
+
+spy_glass = GolfCourse.create!(
+  location: "3206 Stevenson Dr, Pebble Beach, CA 93953, USA"
+  name: "Spy Glass"
+  par: 72
+  review: "Beautiful Course"
+)
+
+edgewood = GolfCourse.create!(
+  location: "180 Lake Pkwy, Stateline, NV 89449, USA"
+  name: "Edgewood Tahoe"
+  par: 72
+  review: "Amazing views of Lake Tahoe"
+)
+
+coyote_moon = GolfCourse.create!(
+  location: "10685 Northwoods Blvd, Truckee, CA 96161, USA"
+  name: "Coyote Moon"
+  par: 71
+  review: "Great Mountain Course"
+)
+
+olympic_club = GolfCourse.create!(
+  location: "599 Skyline Blvd., San Francisco, CA 94132"
+  name: "Olympic CLub"
+  par: 72
+  review: "Very posh and private"
+)
+
+riviera_country_club = GolfCourse.create!(
+  location: "1250 Capri Dr, Pacific Palisades, CA 90272, USA"
+  name: "Riviera Country Club"
+  par: 71
+  review: "Glitzy LA course"
 )
