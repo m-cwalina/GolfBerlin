@@ -1,3 +1,7 @@
 <h1>Golf Course Index Page</h1>
 
-
+<ul>
+  <% @golfcourses.each do |golfcourse| %>
+    <li><%= golfcourse.name %></li>
+  <% end %>
+</ul>
