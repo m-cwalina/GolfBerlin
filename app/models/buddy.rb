@@ -1,4 +1,4 @@
 class Buddy < ApplicationRecord
-  belongs_to :user, dependent: :destroy
-  belongs_to :golf_course, dependent: :destroy
+  belongs_to :golf_course
+  belongs_to :user
 end
