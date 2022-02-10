@@ -86,30 +86,42 @@ user3 = User.create!(
 
 friend1 = Buddy.create!(
   user: user1,
+  first_name: Faker::Name.first_name,
+  last_name: Faker::Name.last_name,
   golf_course: pebble_beach
 )
 
 friend2 = Buddy.create!(
   user: user1,
+  first_name: Faker::Name.first_name,
+  last_name: Faker::Name.last_name,
   golf_course: spy_glass
 )
 
 friend3 = Buddy.create!(
   user: user1,
+  first_name: Faker::Name.first_name,
+  last_name: Faker::Name.last_name,
   golf_course: edgewood
 )
 
 friend4 = Buddy.create!(
   user: user1,
+  first_name: Faker::Name.first_name,
+  last_name: Faker::Name.last_name,
   golf_course: coyote_moon
 )
 
 friend5 = Buddy.create!(
   user: user1,
+  first_name: Faker::Name.first_name,
+  last_name: Faker::Name.last_name,
   golf_course: olympic_club
 )
 
 friend6 = Buddy.create!(
   user: user1,
+  first_name: Faker::Name.first_name,
+  last_name: Faker::Name.last_name,
   golf_course: riviera
 )
