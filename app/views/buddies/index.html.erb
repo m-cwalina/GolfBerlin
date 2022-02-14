@@ -1,12 +1,9 @@
-<div class="container">
-  <div class="container-brandcard mt-5">
-    <div class="flex-container-card-category">
-      <% @buddies.each do |buddy| %>
-        <div class="card-body">
-          <h5 class="card-title"><%= buddy.first_name %></h5>
-          <p class="card-text"><%= buddy.golf_course.name %></p>
-        </div>
-      <% end %>
+<div class="card-product">
+  <% @buddies.each do |buddy| %>
+    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+    <div class="card-product-infos">
+      <h2><%= buddy.first_name %></h2>
+      <p><%= buddy.golf_course.name %></p>
     </div>
-  </div>
+  <% end %>
 </div>
