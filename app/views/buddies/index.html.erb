@@ -1,5 +1,12 @@
-<ul>
-  <% @buddies.each do |buddy| %>
-    <li><%= buddy.first_name %></li>
-  <% end %>
-</ul>
+<div class="conatiner">
+  <div class="container-brandcard mt-5">
+    <div class="d-flex flex-wrap" style="padding-top: 85px;">
+      <% @buddies.each do |buddy| %>
+        <div class="card-body">
+          <h5 class="card-title"><%= buddy.first_name %></h5>
+          <p class="card-text"><%= buddy.golf_course %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
