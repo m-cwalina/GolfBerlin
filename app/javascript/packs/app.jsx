@@ -4,23 +4,25 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import PropTypes from 'prop-types'
 
-const Hello = props => (
-  <div>Hello {props.name}!</div>
-)
 
-Hello.defaultProps = {
-  name: 'David'
+
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="top-scene">
+      </div>
+    );
+  }
 }
 
-Hello.propTypes = {
-  name: PropTypes.string
-}
+
+//rendering the application on the DOM
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Hello name="React" />,
+    <App />,
     document.body.appendChild(document.createElement('div')),
   )
 })

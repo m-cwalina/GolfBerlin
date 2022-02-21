@@ -24,8 +24,8 @@
 
 /* Centered section inside the top navigation */
 .topnav-centered a {
-  float: none;
-  position: absolute;
+  float: center;
+  position: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -34,4 +34,12 @@
 /* Right-aligned section inside the top navigation */
 .topnav-right {
   float: right;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+
 }
