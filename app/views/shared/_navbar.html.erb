@@ -1,18 +1,35 @@
-<!-- Top navigation -->
-<div class="topnav">
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="container-fluid">
+    <%= link_to "#", class: "navbar-brand" do %>
+      <%= image_tag "Golftime-logos_white.png", class:"logo"%>
+    <% end %>
 
-  <!-- Centered link -->
-  <div class="topnav-centered">
-    <%= image_tag "Golftime-logos_white.png", style: 'height:15vw;width:15vw;', class: "logo" %>
-  </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <!-- Left-aligned links (default) -->
-  <a href="#news">Buddies</a>
-  <a href="#contact">Courses</a>
-
-  <!-- Right-aligned links -->
-  <div class="topnav-right">
-    <a href="#search">Contact</a>
-    <a href="#about">Sign In</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <%# if user_signed_in? %>
+          <li class="nav-item active">
+            <%= link_to "Buddies", "#", class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Courses", "#", class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Sign In", "#", class: "nav-link" %>
+          </li>
+          <li class="nav-item dropdown">
+              <%#= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+            </div>
+          </li>
+        <%# else %>
+          <!--li class="nav-item"-->
+            <%#= link_to "Login", new_user_session_path, class: "nav-link" %>
+          <!--/li-->
+        <%# end %>
+      </ul>
+    </div>
   </div>
 </div>

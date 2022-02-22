@@ -7,3 +7,5 @@ class Buddies extends Component {
     )
   }
 }
+
+export default Buddies;
