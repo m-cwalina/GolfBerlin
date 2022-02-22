@@ -1,17 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-class Map extends React.Component {
-
-}
-
-class List extends React.Component {
-
-}
-
-class SearchBar extends React.Component {
-
-}
 
 class App extends React.Component {
   render() {
@@ -21,6 +10,7 @@ class App extends React.Component {
         </div>
         <div className="container">
           <div className="left-scene">
+            <BuddiesList />
           </div>
           <div className="right-scene">
           </div>
