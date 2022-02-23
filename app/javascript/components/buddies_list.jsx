@@ -1,8 +1,18 @@
 import React  from 'react';
-import Buddies from './buddies';
+import Buddy from './buddy';
 
 const BuddiesList = (props) => {
   const renderList = () => {
-    
+    return props.buddies.map((buddy, index) => {
+      return (
+        <Buddy
+          buddy={buddy}
+          key={index}
+        />
+      )
+    })
   }
+  return (renderList())
 }
+
+export default BuddiesList

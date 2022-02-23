@@ -1,8 +1,16 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import BuddiesList from './buddies_list'
+import buddies from '../data/buddies.js'
 
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      buddies
+    }
+  }
+
   render() {
     return (
       <div>
@@ -10,7 +18,9 @@ class App extends React.Component {
         </div>
         <div className="container">
           <div className="left-scene">
-            <BuddiesList />
+            <BuddiesList
+              buddies={this.state.buddies}
+             />
           </div>
           <div className="right-scene">
           </div>
