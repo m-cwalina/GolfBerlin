@@ -1,33 +1,34 @@
-import React from 'react'
-import BuddiesList from './buddies_list'
-import buddies from '../data/buddies.js'
+import React from 'react';
+import SearchBar from './searchbar';
+import buddies from '../data/buddies';
 
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      buddies
-    }
+
+const filterBuddies = (buddies, query) => {
+  if (!query) {
+    return buddies;
   }
+  return buddies.filter((buddy) => {
+    const buddyName = buddy.first_name.toLowerCase();
+    return buddyName.includes(query);
+  });
+};
 
-  render() {
-    return (
-      <div>
-        <div className="top-scene">
-        </div>
-        <div className="container">
-          <div className="left-scene">
-            <BuddiesList
-              buddies={this.state.buddies}
-             />
-          </div>
-          <div className="right-scene">
-          </div>
-        </div>
-      </div>
-    );
-  }
+const App = () => {
+  const { search } = window.location;
+  const query = new URLSearchParams(search).get('s');
+  const filteredBuddies = filterBuddies(buddies, query);
+
+  return (
+    <div className="right-scene">
+      <SearchBar />
+      <ul>
+        {filteredBuddies.map((buddy, index) => (
+          <li key={index}>{buddy.first_name}| {buddy.address}</li>
+        ))}
+      </ul>
+    </div>
+  )
 }
 
 export default App;
