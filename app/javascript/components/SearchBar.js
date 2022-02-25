@@ -9,7 +9,7 @@ function SearchBar( { placeholder, data }) {
 
   const handleFilter = (event) => {
     const searchWord = event.target.value
-    setWordEntered(searchWord)
+    setWordEntered(searchWord);
     const newFilter = data.filter((value) => {
       return value.first_name.toLowerCase().includes(searchWord.toLowerCase());;
     });
@@ -17,7 +17,8 @@ function SearchBar( { placeholder, data }) {
   }
 
   const clearInput = () => {
-    setFilteredData([])
+    setFilteredData([]);
+    setWordEntered("");
   }
 
   return (
@@ -25,8 +26,7 @@ function SearchBar( { placeholder, data }) {
       <div className="searchInput"></div>
         <input type="text" placeholder={placeholder} value={wordEntered} onChange={handleFilter}/>
         <div className="searchIcon">
-        {filteredData.length == 0 ? <SearchIcon /> : <CloseIcon id="clearBtn" onChange={clearInput} />}
-
+        {filteredData.length === 0 ? <SearchIcon /> : <CloseIcon id="clearBtn" onClick={clearInput} />}
         </div>
       <div className="dataResult">
         {filteredData.slice(0, 15).map((value, key) => {
