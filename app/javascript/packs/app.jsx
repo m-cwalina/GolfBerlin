@@ -1,6 +1,6 @@
 import React from 'react';
 import Data from "../data/mock_data.json";
-import SearchBar from './SearchBar';
+import SearchBar from '../components/SearchBar';
 
 function App() {
   return (
