@@ -15,6 +15,7 @@ export default function Airline(props) {
           <div>
             <p>{props.alliance}</p>
             <p>{props.phone}</p>
+            <p>{props.name}</p>
             <a href={props.site} target="_blank" rel="noopener noreferrer">
               {props.site}
             </a>
