@@ -1,4 +1,4 @@
-.searchInputs {
+.searchInput {
   margin-top: 105px;
   display: flex;
 }
@@ -19,7 +19,7 @@
   height: 30px;
   width: 50px;
   background-color: white;
-  display: grid;
+  display: flex;
   place-items: center;
 }
 
