@@ -1,26 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
 import './searchbar.css';
 
-function SearchBar( { placeholder, data }) {
+function SearchBar({ placeholder, data }) {
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
-
-  const Api = async () => {
-    const URL = "api/v1/buddies/index";
-    try {
-      let response = await fetch(URL);
-      let data = await response.json();
-      setFilteredData(data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  useEffect(() => {
-    Api();
-  }, []);
 
   const handleFilter = (event) => {
     const searchWord = event.target.value
@@ -39,11 +24,11 @@ function SearchBar( { placeholder, data }) {
   return (
     <div className="search">
       <div className="searchInput">
-        <input type="text" placeholder={placeholder} value={wordEntered} onChange={handleFilter}/>
-          <div className="searchIcon">
+        <input type="text" placeholder={placeholder} value={wordEntered} onChange={handleFilter} />
+        <div className="searchIcon">
           {filteredData.length === 0 ? <SearchIcon /> : <CloseIcon id="clearBtn" onClick={clearInput} />}
-          </div>
         </div>
+      </div>
       <div className="tiles">
         {filteredData.slice(0, 15).map((value, key) => {
           return <a className="tile"><p>{value.first_name} {value.last_name}</p></a>

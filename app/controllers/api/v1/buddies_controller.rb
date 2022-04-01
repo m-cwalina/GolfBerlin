@@ -4,7 +4,7 @@ class Api::V1::BuddiesController < ApplicationController
   # GET /buddies
   # GET /buddies.json
   def index
-    @buddes = Buddy.all.order(first_name: :asc)
+    @buddies = Buddy.all
     render json: @buddies
   end
 
