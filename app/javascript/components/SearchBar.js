@@ -1,31 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
 import './searchbar.css';
 
-function SearchBar( { placeholder, data }) {
+function SearchBar({placeholder, data}) {
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
-
-/*Here is my API that connects to the API I created in Rails for my buddies*/
-
-  const Api = async () => {
-    const URL = "api/v1/buddies/index";
-    try {
-      let response = await fetch(URL);
-      let data = await response.json();
-      setFilteredData(data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-/*I use this function so the array of buddies will show upon screen loading*/
-
-  useEffect(() => {
-    Api();
-  }, []);
-
 
 /*This handles the filtering function. Takes data from input and filters array of buddies*/
 
