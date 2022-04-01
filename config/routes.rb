@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
+  namespace :api do
+    namespace :v1 do
+      get 'buddies/index'
+      post 'buddies/create'
+      delete 'buddies/:id', to: 'buddies#destroy'
+    end
+  end
+
   root to: 'pages#home'
   resources :golf_courses
   resources :buddies
