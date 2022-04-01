@@ -7,6 +7,8 @@ function SearchBar( { placeholder, data }) {
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
 
+/*Here is my API that connects to the API I created in Rails for my buddies*/
+
   const Api = async () => {
     const URL = "api/v1/buddies/index";
     try {
@@ -18,9 +20,14 @@ function SearchBar( { placeholder, data }) {
     }
   };
 
+/*I use this function so the array of buddies will show upon screen loading*/
+
   useEffect(() => {
     Api();
   }, []);
+
+
+/*This handles the filtering function. Takes data from input and filters array of buddies*/
 
   const handleFilter = (event) => {
     const searchWord = event.target.value

@@ -61,6 +61,6 @@ class Api::V1::BuddiesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def buddy_params
-      params.permit(:first_name, :last_name, :age, :address)
+      params.permit(:first_name, :last_name, :age, :handicap, :address)
     end
 end
