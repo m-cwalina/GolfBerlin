@@ -7,7 +7,7 @@ function SearchBar({placeholder, data}) {
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
 
-/*This handles the filtering function. Takes data from input and filters array of buddies*/
+  /*This handles the filtering function. Takes data from input and filters array of buddies*/
 
   const handleFilter = (event) => {
     const searchWord = event.target.value
