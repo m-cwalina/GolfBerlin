@@ -1,7 +1,6 @@
-.searchInput {
+.searchArea {
   margin-top: 80px;
   margin-bottom: 80px;
-  margin-left: 135px;
   text-align: center;
   display: flex;
 }
@@ -43,8 +42,11 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  background-color: lightgrey;
+.searchBar {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  margin: auto;
 }
 
 #clearBtn {

@@ -25,12 +25,14 @@ function SearchBar({placeholder, data}) {
 
   return (
     <div className="search">
-      <div className="searchInput">
-        <input type="text" placeholder={placeholder} value={wordEntered} onChange={handleFilter}/>
+      <div className="searchArea">
+        <div className="searchBar">
+          <input type="text" placeholder={placeholder} value={wordEntered} onChange={handleFilter}/>
           <div className="searchIcon">
           {filteredData.length === 0 ? <SearchIcon /> : <CloseIcon id="clearBtn" onClick={clearInput} />}
           </div>
         </div>
+      </div>
       <div className="tiles">
         {filteredData.slice(0, 15).map((value, key) => {
           return <a className="tile"><p>{value.first_name} {value.last_name}</p></a>
