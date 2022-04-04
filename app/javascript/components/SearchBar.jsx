@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Buddies from './Buddies'
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
 import './searchbar.css';
@@ -29,14 +30,12 @@ function SearchBar({placeholder, data}) {
         <div className="searchBar">
           <input type="text" placeholder={placeholder} value={wordEntered} onChange={handleFilter}/>
           <div className="searchIcon">
-          {filteredData.length === 0 ? <SearchIcon /> : <CloseIcon id="clearBtn" onClick={clearInput} />}
+            {filteredData.length === 0 ? <SearchIcon /> : <CloseIcon id="clearBtn" onClick={clearInput} />}
           </div>
         </div>
       </div>
-      <div className="tiles">
-        {filteredData.slice(0, 15).map((value, key) => {
-          return <a className="tile"><p>{value.first_name} {value.last_name}</p></a>
-        })}
+      <div>
+        <Buddies filteredData={filteredData}/>
       </div>
     </div>
   )
