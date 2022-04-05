@@ -69,3 +69,6 @@ gem 'faker'
 
 #A gem to use react in rails!
 gem 'react-rails', '~> 2.6', '>= 2.6.1'
+
+#A gem to use geolacations such as latitude and longitude
+gem "geocoder"
