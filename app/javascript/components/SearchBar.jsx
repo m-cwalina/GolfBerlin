@@ -1,9 +1,9 @@
 import React from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
-import './searchbar.css';
 
-function SearchBar({placeholder, handleFilter, wordEntered, clearInput, buddies}) {
+
+export default function SearchBar({placeholder, handleFilter, wordEntered, clearInput, buddies}) {
   return (
     <div className="search">
       <div className="searchArea">
@@ -17,5 +17,3 @@ function SearchBar({placeholder, handleFilter, wordEntered, clearInput, buddies}
     </div>
   )
 }
-
-export default SearchBar;
