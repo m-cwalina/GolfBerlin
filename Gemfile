@@ -72,3 +72,6 @@ gem 'react-rails', '~> 2.6', '>= 2.6.1'
 
 #A gem to use geolacations such as latitude and longitude
 gem "geocoder"
+
+#A gem to hide my API credentials
+gem 'figaro'

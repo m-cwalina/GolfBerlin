@@ -12,13 +12,11 @@ export default function Map() {
     zoom: 11
   };
 
-  const API_KEY = 'AIzaSyASJYXy8mGNbCMzZbYgxas5fZwNkvyyaOw'
-
   return (
     // Important! Always set the container height explicitly
     <div className="map" style={{ height: '100vh', width: '100%' }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: API_KEY }}
+        bootstrapURLKeys={{ key: process.env.API_KEY }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >
