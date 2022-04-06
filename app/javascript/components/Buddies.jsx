@@ -7,7 +7,7 @@ export default function Buddies(props) {
         return <a className="tile" key={buddy.id}>
                   <p>
                     {buddy.first_name}
-                     {buddy.last_name}
+                    {buddy.last_name}
                   </p>
                 </a>
       })}
