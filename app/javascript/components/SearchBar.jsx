@@ -1,12 +1,10 @@
 import React from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
-import '../packs/index.css'
 
 
 export default function SearchBar({placeholder, handleFilter, wordEntered, clearInput, buddies}) {
   return (
-    <div className="search">
       <div className="searchArea">
         <div className="searchBar">
           <input type="text" placeholder={placeholder} value={wordEntered} onChange={handleFilter}/>
@@ -15,6 +13,5 @@ export default function SearchBar({placeholder, handleFilter, wordEntered, clear
           </div>
         </div>
       </div>
-    </div>
   )
 }

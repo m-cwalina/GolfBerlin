@@ -1,3 +1,5 @@
+/* Search Bar area */
+
 .searchArea {
   margin-top: 80px;
   margin-bottom: 80px;
@@ -5,7 +7,7 @@
   display: flex;
 }
 
-.search input {
+.searchArea input {
   border: 0;
   border-radius: 2px;
   border-top-right-radius: 0px;
@@ -27,6 +29,7 @@
 input:focus {
   outline: none;
 }
+
 .searchIcon svg {
   font-size: 35px;
 }
@@ -45,6 +48,8 @@ a {
 #clearBtn {
   cursor: pointer;
 }
+
+/* Tiles that show up after search */
 
 .tiles {
   display: grid;
@@ -66,9 +71,12 @@ a {
   overflow: hidden;
 }
 
+
 .Buddy-List {
   margin-bottom: 150px;
 }
+
+/* Map for the course section */
 
 .map {
   margin-bottom: 150px;
