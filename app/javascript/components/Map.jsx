@@ -1,6 +1,6 @@
 import React from "react";
 import GoogleMapReact from 'google-map-react';
-import Markers from './Markers'
+import Markers from './Marker'
 
 export default function Map(props) {
   const defaultProps = {
@@ -19,7 +19,7 @@ export default function Map(props) {
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >
-        <Markers />
+        <Marker />
       </GoogleMapReact>
     </div>
   );
