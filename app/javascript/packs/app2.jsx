@@ -6,6 +6,7 @@ import './index.css';
 export default function App() {
   const [courses, setCourses] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
+  const [wordEntered, setWordEntered] = useState("");
 
   const Api = async () => {
     const URL = "api/v1/buddies/index";
@@ -22,7 +23,7 @@ export default function App() {
     const searchWord = event.target.value
     setWordEntered(searchWord);
     const newFilter = courses.filter((value) => {
-      return value.golf_course.toLowerCase().includes(searchWord.toLowerCase());;
+      return value.name.toLowerCase().includes(searchWord.toLowerCase());;
     });
     setFilteredData(newFilter);
   }
@@ -33,7 +34,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <SearchBar2 handleFilter={handleFilter} placeholder="Find a course" courses={courses} />
+      <SearchBar2 handleFilter={handleFilter} placeholder="Find a course" courses={filteredData} wordEntered={wordEntered} />
       <Map courses={courses} />
     </div>
   )

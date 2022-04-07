@@ -5,6 +5,9 @@ Rails.application.routes.draw do
       get 'buddies/index'
       post 'buddies/create'
       delete 'buddies/:id', to: 'buddies#destroy'
+      get 'golfcourses/index'
+      post 'golfcourses/create'
+      delete 'golfcourses/:id', to: 'golfcourses#destroy'
     end
   end
 
