@@ -35,7 +35,7 @@ export default function App() {
   return (
     <div className="App">
       <SearchBar2 handleFilter={handleFilter} placeholder="Find a course" courses={filteredData} wordEntered={wordEntered} />
-      <Map courses={courses} />
+      <Map courses={filteredData} />
     </div>
   )
 }

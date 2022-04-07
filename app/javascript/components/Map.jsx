@@ -1,8 +1,9 @@
 import React from "react";
 import GoogleMapReact from 'google-map-react';
 import Marker from './Marker'
+import { GolfCourseSharp } from "@mui/icons-material";
 
-export default function Map(props) {
+export default function Map(courses) {
   const defaultProps = {
     center: {
       lat: 37.7749,
@@ -19,7 +20,7 @@ export default function Map(props) {
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >
-        <Marker />
+        <Marker lat={courses.latitude} lng={courses.longitude} />
       </GoogleMapReact>
     </div>
   );
