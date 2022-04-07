@@ -61,6 +61,6 @@ class Api::V1::GolfCoursesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def golfcourse_params
-      params.permit(:location, :name, :par)
+      params.permit(:location, :name, :par, :latitude, :longitude)
     end
 end

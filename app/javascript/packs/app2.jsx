@@ -9,7 +9,7 @@ export default function App() {
   const [wordEntered, setWordEntered] = useState("");
 
   const Api = async () => {
-    const URL = "api/v1/buddies/index";
+    const URL = "api/v1/golf_courses/index";
     try {
       let response = await fetch(URL);
       let data = await response.json();
