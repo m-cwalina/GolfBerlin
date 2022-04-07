@@ -1,6 +1,6 @@
 import React from "react";
 import GoogleMapReact from 'google-map-react';
-import Markers from './Marker'
+import Marker from './Marker'
 
 export default function Map(props) {
   const defaultProps = {

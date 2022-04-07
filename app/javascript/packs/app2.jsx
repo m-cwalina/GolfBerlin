@@ -1,20 +1,31 @@
 import React, {useState, useEffect} from 'react';
 import Map from '../components/Map'
+import SearchBar2 from '../components/SearchBar2'
 import './index.css';
 
 export default function App() {
-  const [locations, setLocations] = useState([])
+  const [courses, setCourses] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
 
   const Api = async () => {
     const URL = "api/v1/buddies/index";
     try {
       let response = await fetch(URL);
       let data = await response.json();
-      setLocations(data);
+      setCourses(data);
     } catch (error) {
       console.error(error);
     }
   };
+
+  const handleFilter = (event) => {
+    const searchWord = event.target.value
+    setWordEntered(searchWord);
+    const newFilter = courses.filter((value) => {
+      return value.golf_course.toLowerCase().includes(searchWord.toLowerCase());;
+    });
+    setFilteredData(newFilter);
+  }
 
   useEffect(() => {
     Api();
@@ -22,7 +33,8 @@ export default function App() {
 
   return (
     <div className="App">
-      <Map locations={locations} />
+      <SearchBar2 handleFilter={handleFilter} placeholder="Find a course" courses={courses} />
+      <Map courses={courses} />
     </div>
   )
 }
