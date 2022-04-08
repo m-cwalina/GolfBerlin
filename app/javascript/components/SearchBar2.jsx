@@ -3,13 +3,13 @@ import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
 
 
-export default function SearchBar2({handleFilter, placeholder, wordEntered, clearInput, courses}) {
+export default function SearchBar2({placeholder, wordEntered, clearInput, handleSearch}) {
   return (
     <div className="searchArea">
       <div className="searchBar">
-        <input type="text" placeholder={placeholder} value={wordEntered} onChange={handleFilter} />
+        <input type="text" placeholder={placeholder} value={wordEntered} onChange={handleSearch} />
         <div className="searchIcon">
-          {courses.length === 0 ? <SearchIcon /> : <CloseIcon id="clearBtn" onClick={clearInput} />}
+          {handleSearch.length === 0 ? <SearchIcon /> : <CloseIcon id="clearBtn" onClick={clearInput} />}
         </div>
       </div>
     </div>

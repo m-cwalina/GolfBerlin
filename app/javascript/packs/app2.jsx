@@ -6,7 +6,6 @@ import './index.css';
 
 export default function App() {
   const [courses, setCourses] = useState([]);
-  const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
   const [selectedCourse, setSelectedCourse] = useState(0);
 
@@ -20,18 +19,21 @@ export default function App() {
       console.error(error);
     }
   };
-  
-  const handleFilter = (event) => {
-    const searchWord = event.target.value
-    setWordEntered(searchWord);
-    const newFilter = courses.filter((value) => {
-      return value.name.toLowerCase().includes(searchWord.toLowerCase());;
-    });
-    setFilteredData(newFilter);
-  }
+
+  const handleSearch = event => {
+    setWordEntered(event.target.value);
+  };
+
+  const searchCourses = courses.filter(
+    course => course.name.toLowerCase().includes(wordEntered.toLowerCase())
+    )
 
   const selectCourse = (index) => {
     setSelectedCourse(courses[index])
+  }
+
+  const clearInput = () => {
+    setWordEntered("");
   }
 
   useEffect(() => {
@@ -41,11 +43,11 @@ export default function App() {
   return (
     <div className="App">
       <div className="Upper-Scene">
-        <SearchBar2 handleFilter={handleFilter} placeholder="Find a course" courses={filteredData} wordEntered={wordEntered} />
+        <SearchBar2 handleSearch={handleSearch} placeholder="Find a course" wordEntered={wordEntered} clearInput={clearInput} />
       </div>
       <div className="Bottom-Scene">
         <div className="Left-Scene">
-          <Courses courses={filteredData} selectCourse={selectCourse} selectedCourse={selectedCourse} />
+          <Courses courses={searchCourses} selectCourse={selectCourse} selectedCourse={selectedCourse} handleSearch={handleSearch} />
         </div>
         <div className="Right-Scene">
           <Map selectedCourse={selectedCourse}/>

@@ -5,7 +5,6 @@ import './index.css';
 
 export default function App() {
   const [buddies, setBuddies] = useState([]);
-  const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
 
   /*Here is my API that connects to the API I created in Rails for my buddies*/
@@ -28,25 +27,23 @@ export default function App() {
 
   /*This handles the filtering function. Takes data from input and filters array of buddies*/
 
-  const handleFilter = (event) => {
-    const searchWord = event.target.value
-    setWordEntered(searchWord);
-    const newFilter = buddies.filter((value) => {
-      return value.first_name.toLowerCase().includes(searchWord.toLowerCase());;
-    });
-    setFilteredData(newFilter);
-  }
+  const handleSearch = event => {
+    setWordEntered(event.target.value);
+  };
+
+  const searchBuddies = buddies.filter(
+    buddy => buddy.first_name.toLowerCase().includes(wordEntered.toLowerCase())
+    )
 
   const clearInput = () => {
-    setFilteredData([]);
     setWordEntered("");
   }
 
   return (
     <div className="App">
-      <SearchBar placeholder="Find your buddy" buddies={filteredData} handleFilter={handleFilter} wordEntered = {wordEntered} clearInput={clearInput}/>
+      <SearchBar placeholder="Find your buddy" buddies={wordEntered} handleSearch={handleSearch} wordEntered={wordEntered} clearInput={clearInput}/>
       <div className="Buddy-List">
-        <Buddies buddies={filteredData} />
+        <Buddies buddies={searchBuddies} />
       </div>
     </div>
   )
