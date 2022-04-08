@@ -8,7 +8,7 @@ export default function App() {
   const [courses, setCourses] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
-  const [selectedCourse, setSelectedCourse] = useState([]);
+  const [selectedCourse, setSelectedCourse] = useState(0);
 
   const Api = async () => {
     const URL = "api/v1/golf_courses/index";
@@ -33,8 +33,6 @@ export default function App() {
   const selectCourse = (index) => {
     setSelectedCourse(courses[index])
   }
-
-  console.log(selectCourse(2));
 
   useEffect(() => {
     Api();
