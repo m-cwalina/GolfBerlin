@@ -2,11 +2,11 @@ import React from "react";
 import GoogleMapReact from 'google-map-react';
 import Marker from './Marker'
 
-export default function Map(courses) {
+export default function Map(props) {
   const defaultProps = {
     center: {
-      lat: 37.7749,
-      lng: -122.4194
+      lat: props.selectedCourse.latitude,
+      lng: props.selectedCourse.longitude,
     },
     zoom: 11
   };
@@ -19,7 +19,7 @@ export default function Map(courses) {
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >
-        <Marker lat={courses.latitude} lng={courses.longitude} />
+        <Marker lat={props.selectedCourse.latitude} lng={props.selectedCourse.longitude} />
       </GoogleMapReact>
     </div>
   );

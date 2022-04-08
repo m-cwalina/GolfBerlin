@@ -8,6 +8,7 @@ export default function App() {
   const [courses, setCourses] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
+  const [selectedCourse, setSelectedCourse] = useState([]);
 
   const Api = async () => {
     const URL = "api/v1/golf_courses/index";
@@ -29,6 +30,10 @@ export default function App() {
     setFilteredData(newFilter);
   }
 
+  const selectCourse = (index) => {
+    setSelectedCourse(selectedCourse === courses[index]);
+  }
+
   useEffect(() => {
     Api();
   }, []);
@@ -40,10 +45,10 @@ export default function App() {
       </div>
       <div className="Bottom-Scene">
         <div className="Left-Scene">
-          <Courses courses={filteredData} />
+          <Courses courses={filteredData} selectCourse={selectCourse} selectedCourse={selectedCourse} />
         </div>
         <div className="Right-Scene">
-          <Map courses={filteredData} />
+          <Map selectedCourse={selectedCourse} />
         </div>
       </div>
     </div>

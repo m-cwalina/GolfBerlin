@@ -1,10 +1,13 @@
 import React from 'react';
 
 export default function Course(props) {
+  const handleClick = () => {
+    props.selectCourse(props.index);
+  }
+
   return (
     <div>
-      <p>{props.course.name}</p>
-      <p>{props.course.location}</p>
+      <a onClick={handleClick}>{props.course.name}</a>
     </div>
   )
 }
