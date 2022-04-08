@@ -11,15 +11,23 @@ export default function Map(props) {
     zoom: 11
   };
 
+   const defaultProps = {
+     center: [37.7749, -122.4194]
+  };
+
   return (
     // Important! Always set the container height explicitly
     <div className="map" style={{ height: '100vh', width: '100%' }}>
       <GoogleMapReact
+        defaultCenter={defaultProps.center}
         bootstrapURLKeys={{ key: process.env.API_KEY }}
         center={center.center}
         zoom={center.zoom}
       >
-        <Marker lat={props.selectedCourse.latitude} lng={props.selectedCourse.longitude} />
+        <Marker
+          lat={props.selectedCourse.latitude} lng={props.selectedCourse.longitude}
+
+        />
       </GoogleMapReact>
     </div>
   );
