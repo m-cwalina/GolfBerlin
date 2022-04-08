@@ -31,8 +31,10 @@ export default function App() {
   }
 
   const selectCourse = (index) => {
-    setSelectedCourse(selectedCourse === courses[index]);
+    setSelectedCourse(courses[index])
   }
+
+  console.log(selectCourse(2));
 
   useEffect(() => {
     Api();
@@ -48,7 +50,7 @@ export default function App() {
           <Courses courses={filteredData} selectCourse={selectCourse} selectedCourse={selectedCourse} />
         </div>
         <div className="Right-Scene">
-          <Map selectedCourse={selectedCourse} />
+          <Map selectedCourse={selectedCourse}/>
         </div>
       </div>
     </div>
