@@ -46,7 +46,7 @@ export default function App() {
     <div className="App">
       <SearchBar placeholder="Find your buddy" buddies={filteredData} handleFilter={handleFilter} wordEntered = {wordEntered} clearInput={clearInput}/>
       <div className="Buddy-List">
-        <Buddies filteredData={filteredData} />
+        <Buddies buddies={filteredData} />
       </div>
     </div>
   )

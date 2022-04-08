@@ -1,7 +1,6 @@
 import React from "react";
 import GoogleMapReact from 'google-map-react';
 import Marker from './Marker'
-import { GolfCourseSharp } from "@mui/icons-material";
 
 export default function Map(courses) {
   const defaultProps = {

@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Map from '../components/Map'
 import SearchBar2 from '../components/SearchBar2'
+import Courses from '../components/Courses'
 import './index.css';
 
 export default function App() {
@@ -34,8 +35,15 @@ export default function App() {
 
   return (
     <div className="App">
-      <SearchBar2 handleFilter={handleFilter} placeholder="Find a course" courses={filteredData} wordEntered={wordEntered} />
-      <Map courses={filteredData} />
+      <div className="Upper-Scene">
+        <SearchBar2 handleFilter={handleFilter} placeholder="Find a course" courses={filteredData} wordEntered={wordEntered} />
+      </div>
+      <div className="Left-Scene">
+        <Courses courses={filteredData} />
+      </div>
+      <div className="Right-Scene">
+        <Map courses={filteredData} />
+      </div>
     </div>
   )
 }

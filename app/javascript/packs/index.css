@@ -81,3 +81,11 @@ a {
 .map {
   margin-bottom: 150px;
 }
+
+.Right-Scene {
+  width: 60%;
+}
+
+.Left-Scene {
+  width: 40%;
+}
