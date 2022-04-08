@@ -7,7 +7,7 @@ export default function Course(props) {
 
   return (
     <div>
-      <a onClick={handleClick}>{props.course.name}</a>
+      <a onClick={handleClick} className="course-tile">{props.course.name}</a>
     </div>
   )
 }
