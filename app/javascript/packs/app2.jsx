@@ -20,7 +20,7 @@ export default function App() {
       console.error(error);
     }
   };
-
+  
   const handleFilter = (event) => {
     const searchWord = event.target.value
     setWordEntered(searchWord);
