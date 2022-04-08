@@ -1,9 +1,9 @@
 import React from 'react';
 import Course from './Course'
 
-export default function Courses(courses) {
+export default function Courses(props) {
   const renderList = () => {
-    return courses.map((course, index) => {
+    return props.courses.map((course, index) => {
       return (
         <Course
           course={course}

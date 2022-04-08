@@ -82,6 +82,10 @@ a {
   margin-bottom: 150px;
 }
 
+.Bottom-Scene {
+  display: flex;
+}
+
 .Right-Scene {
   width: 60%;
 }
