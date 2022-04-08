@@ -5,8 +5,8 @@ import Marker from './Marker'
 export default function Map(props) {
   const defaultProps = {
     center: {
-      lat: props.selectedCourse.latitude,
-      lng: props.selectedCourse.longitude,
+      lat: 37.7749,
+      lng: -122.4194,
     },
     zoom: 11
   };

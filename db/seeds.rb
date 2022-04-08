@@ -16,7 +16,7 @@ pebble_beach = GolfCourse.create!(
   name: "Pebble Beach",
   par: 72,
   latitude: 36.5725,
-  longitude: 121.9486
+  longitude: -121.9486
 )
 
 spy_glass = GolfCourse.create!(
@@ -24,7 +24,7 @@ spy_glass = GolfCourse.create!(
   name: "Spy Glass",
   par: 72,
   latitude: 36.5824,
-  longitude: 121.9583
+  longitude: -121.9583
 )
 
 edgewood = GolfCourse.create!(
@@ -32,7 +32,7 @@ edgewood = GolfCourse.create!(
   name: "Edgewood Tahoe",
   par: 72,
   latitude: 38.9662,
-  longitude: 119.9482
+  longitude: -119.9482
 )
 
 coyote_moon = GolfCourse.create!(
@@ -40,7 +40,7 @@ coyote_moon = GolfCourse.create!(
   name: "Coyote Moon",
   par: 71,
   latitude: 39.3333,
-  longitude: 120.2112
+  longitude: -120.2112
 )
 
 olympic_club = GolfCourse.create!(
@@ -48,7 +48,7 @@ olympic_club = GolfCourse.create!(
   name: "Olympic CLub",
   par: 72,
   latitude: 37.7086,
-  longitude: 122.4933
+  longitude: -122.4933
 )
 
 riviera = GolfCourse.create!(
@@ -56,7 +56,7 @@ riviera = GolfCourse.create!(
   name: "Riviera Country Club",
   par: 71,
   latitude: 26.1155,
-  longitude: 81.7357
+  longitude: -81.7357
 )
 
 # Adding Users to database
