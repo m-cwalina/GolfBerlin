@@ -79,7 +79,7 @@ a {
 /* Map for the course section */
 
 .map {
-  margin-bottom: 150px;
+  margin-bottom: 170px;
 }
 
 .Bottom-Scene {
@@ -94,6 +94,7 @@ a {
   position: sticky;
   /* !important to override Gmaps inline CSS */
   top: 0;
+  margin-bottom: 20px;
 }
 
 .Left-Scene {
