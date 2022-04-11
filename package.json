@@ -2,6 +2,7 @@
   "name": "GolfBerlin",
   "private": true,
   "dependencies": {
+    "@babel/preset-env": "^7.16.11",
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.5.1",
