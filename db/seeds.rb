@@ -16,7 +16,8 @@ pebble_beach = GolfCourse.create!(
   name: "Pebble Beach",
   par: 72,
   latitude: 36.5725,
-  longitude: -121.9486
+  longitude: -121.9486,
+  logo: 'https://www.pebblebeach.com/content/uploads/pb-golf-links-01.png',
 )
 
 spy_glass = GolfCourse.create!(
@@ -24,7 +25,8 @@ spy_glass = GolfCourse.create!(
   name: "Spy Glass",
   par: 72,
   latitude: 36.5824,
-  longitude: -121.9583
+  longitude: -121.9583,
+  logo: 'https://www.cfmco.org/wp-content/uploads/2021/07/DigitalPNG-Spyglass-Hill-Golf-Course-Logo-300x148.png',
 )
 
 edgewood = GolfCourse.create!(
@@ -32,7 +34,8 @@ edgewood = GolfCourse.create!(
   name: "Edgewood Tahoe",
   par: 72,
   latitude: 38.9662,
-  longitude: -119.9482
+  longitude: -119.9482,
+  logo: 'https://tahoe.com/sites/default/files/styles/ob_very_large/public/business/32440/logo/edg_logo_color.jpg?itok=CjnGIIos',
 )
 
 coyote_moon = GolfCourse.create!(
@@ -40,7 +43,8 @@ coyote_moon = GolfCourse.create!(
   name: "Coyote Moon",
   par: 71,
   latitude: 39.3333,
-  longitude: -120.2112
+  longitude: -120.2112,
+  logo: 'https://expertgolf-logbook-files.s3.amazonaws.com/tfss-3f9429cb-dfcd-4be9-8e15-4c21df889d1a-CA_Coyote_Moon.png',
 )
 
 olympic_club = GolfCourse.create!(
@@ -48,7 +52,8 @@ olympic_club = GolfCourse.create!(
   name: "Olympic CLub",
   par: 72,
   latitude: 37.7086,
-  longitude: -122.4933
+  longitude: -122.4933,
+  logo: 'https://toppng.com/uploads/preview/olympic-club-rugby-logo-11548794798orvjittmbr.png',
 )
 
 riviera = GolfCourse.create!(
@@ -56,7 +61,8 @@ riviera = GolfCourse.create!(
   name: "Riviera",
   par: 71,
   latitude: 26.1155,
-  longitude: -81.7357
+  longitude: -81.7357,
+  logo: 'https://cdn.allsquaregolf.com/pictures/pictures/000/100/146/large/unknown_picture.jpg',
 )
 
 # Adding Users to database

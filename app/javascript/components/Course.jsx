@@ -7,7 +7,10 @@ export default function Course(props) {
 
   return (
     <div>
-      <a onClick={handleClick} className="course-tile">{props.course.name}</a>
+      <div className="course-tile">
+        <a className="course-title" onClick={handleClick}>{props.course.name}</a>
+        <img className="logo" src={props.course.logo} alt='logo'/>
+      </div>
     </div>
   )
 }

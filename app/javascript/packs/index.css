@@ -71,7 +71,6 @@ a {
   overflow: hidden;
 }
 
-
 .Buddy-List {
   margin-bottom: 150px;
 }
@@ -109,7 +108,7 @@ a {
 }
 
 .course-tile {
-  display: flex;
+  display: inline-grid;
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
@@ -122,4 +121,15 @@ a {
   margin-left: 20px;
   width: 150px;
   margin-bottom: 15px;
+}
+
+.logo {
+  height: 140px;
+  width: 140px;
+  margin: auto;
+}
+
+.course-title {
+  margin: auto;
+  font-weight: bold;
 }
