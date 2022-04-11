@@ -53,7 +53,7 @@ olympic_club = GolfCourse.create!(
 
 riviera = GolfCourse.create!(
   location: "1250 Capri Dr, Pacific Palisades, CA 90272, USA",
-  name: "Riviera Country Club",
+  name: "Riviera",
   par: 71,
   latitude: 26.1155,
   longitude: -81.7357
