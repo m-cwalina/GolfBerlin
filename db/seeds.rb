@@ -65,6 +65,42 @@ riviera = GolfCourse.create!(
   logo: 'https://cdn.allsquaregolf.com/pictures/pictures/000/100/146/large/unknown_picture.jpg',
 )
 
+candlewood = GolfCourse.create!(
+  location: "14000 Telegraph Rd, Whittier, CA 90604, USA",
+  name: "Candlewood",
+  par: 71,
+  latitude: 26.1155,
+  longitude: -81.7357,
+  logo: 'http://2.bp.blogspot.com/-UUzhN3CPc1E/Uo23YHAER2I/AAAAAAAAAPs/EfwJzZp9gqc/s1600/gtc.jpg',
+)
+
+pga_west = GolfCourse.create!(
+  location: "56-150 Pga Blvd, La Quinta, CA 92253, USA",
+  name: "PGA West",
+  par: 72,
+  latitude: 33.6431,
+  longitude: -116.2665,
+  logo: 'https://www.pgawest.com/Images/Library/PgaWestLogo.JPG',
+)
+
+pelican_hills = GolfCourse.create!(
+  location: "22701 S Pelican Hill Rd, Newport Coast, CA 92657, USA",
+  name: "Pelican Hill",
+  par: 72,
+  latitude: 33.5882,
+  longitude: -117.8440,
+  logo: 'https://agriturfdistributing.com/wp-content/uploads/2018/08/Pelican-Hill-Logo.jpg',
+)
+
+codo_de_caza = GolfCourse.create!(
+  location: "25291 Vista Del Verde, Coto De Caza, CA 92679, USA",
+  name: "Coto de Caza",
+  par: 72,
+  latitude: 33.5951,
+  longitude: -117.5907,
+  logo: 'https://www.cui.edu/portals/0/assets/giving/events/eagles-golf-classic/Coto-de-Caza-Golf-and-racquet-club-logo.png',
+)
+
 # Adding Users to database
 
 user1 = User.create!(
