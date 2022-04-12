@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 export default function Course(props) {
+
   const handleClick = () => {
     props.selectCourse(props.index);
   }

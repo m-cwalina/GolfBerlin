@@ -35,7 +35,7 @@ input:focus {
 }
 
 a {
-  text-decoration: none;
+  color: inherit;
 }
 
 .searchBar {
@@ -49,30 +49,53 @@ a {
   cursor: pointer;
 }
 
-/* Tiles that show up after search */
+/* Tiles for buddies that show up after search */
 
-.tiles {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+.buddy-tiles {
+  display: inline-grid;
   align-self: center;
+  margin: 10px;
 }
 
-.tile {
-  display: flex;
+.buddy-tile {
+  display: inline-grid;
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
   min-height: 240px;
-  max-width: 300px;
+  max-width: 200px;
   box-shadow: 0 -1px 4px 0 rgba(25, 32, 36, 0.04),
-    0 3px 6px 0 rgba(25, 32, 36, 0.16);
+  0 3px 6px 0 rgba(25, 32, 36, 0.16);
   border-radius: 8px;
   overflow: hidden;
+  width: 200px;
+  margin: auto;
 }
 
 .Buddy-List {
   margin-bottom: 150px;
+}
+
+.tile-border {
+  border: solid 1px #363f45;
+}
+
+.extra-tile-info {
+  margin: auto;
+}
+
+.buddy-tile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.buddy-name {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /* Map for the course section */
@@ -131,4 +154,10 @@ a {
 .course-title {
   margin: auto;
   font-weight: bold;
+  text-decoration: none !important;
+}
+
+.course-title:hover {
+  color: green;
+  cursor: pointer;
 }

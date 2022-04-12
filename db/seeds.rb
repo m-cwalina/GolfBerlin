@@ -83,7 +83,7 @@ pga_west = GolfCourse.create!(
   logo: 'https://www.pgawest.com/Images/Library/PgaWestLogo.JPG',
 )
 
-pelican_hills = GolfCourse.create!(
+pelican_hill = GolfCourse.create!(
   location: "22701 S Pelican Hill Rd, Newport Coast, CA 92657, USA",
   name: "Pelican Hill",
   par: 72,
@@ -92,7 +92,7 @@ pelican_hills = GolfCourse.create!(
   logo: 'https://agriturfdistributing.com/wp-content/uploads/2018/08/Pelican-Hill-Logo.jpg',
 )
 
-codo_de_caza = GolfCourse.create!(
+coto_de_caza = GolfCourse.create!(
   location: "25291 Vista Del Verde, Coto De Caza, CA 92679, USA",
   name: "Coto de Caza",
   par: 72,
@@ -100,6 +100,26 @@ codo_de_caza = GolfCourse.create!(
   longitude: -117.5907,
   logo: 'https://www.cui.edu/portals/0/assets/giving/events/eagles-golf-classic/Coto-de-Caza-Golf-and-racquet-club-logo.png',
 )
+
+menlo = GolfCourse.create!(
+  location: "2300 Woodside Rd, Woodside, CA 94062, United States",
+  name: "Menlo Golf Club",
+  par: 72,
+  latitude: 37.4453,
+  longitude: -122.2406,
+  logo: 'https://cdn.allsquaregolf.com/pictures/pictures/000/097/109/large/unknown_picture.jpg',
+)
+
+lake_merced = GolfCourse.create!(
+  location: "2300 Junipero Serra Blvd, Daly City, CA 94015, USA",
+  name: "Lake Merced",
+  par: 72,
+  latitude: 37.6960,
+  longitude: -122.4721,
+  logo: 'https://thegolfcourses.com/_51141518208/media/images/logos/USA-CA-00312.jpg',
+)
+
+
 
 # Adding Users to database
 
@@ -196,4 +216,64 @@ friend6 = Buddy.create!(
   handicap: rand(0..30),
   address: Faker::Address.full_address,
   golf_course: riviera
+)
+
+friend7 = Buddy.create!(
+  user: user1,
+  first_name: Faker::Name.first_name,
+  last_name: Faker::Name.last_name,
+  age: rand(12..90),
+  handicap: rand(0..30),
+  address: Faker::Address.full_address,
+  golf_course: coto_de_caza
+)
+
+friend8 = Buddy.create!(
+  user: user1,
+  first_name: Faker::Name.first_name,
+  last_name: Faker::Name.last_name,
+  age: rand(12..90),
+  handicap: rand(0..30),
+  address: Faker::Address.full_address,
+  golf_course: pelican_hill
+)
+
+friend9 = Buddy.create!(
+  user: user1,
+  first_name: Faker::Name.first_name,
+  last_name: Faker::Name.last_name,
+  age: rand(12..90),
+  handicap: rand(0..30),
+  address: Faker::Address.full_address,
+  golf_course: lake_merced
+)
+
+friend10 = Buddy.create!(
+  user: user1,
+  first_name: Faker::Name.first_name,
+  last_name: Faker::Name.last_name,
+  age: rand(12..90),
+  handicap: rand(0..30),
+  address: Faker::Address.full_address,
+  golf_course: candlewood
+)
+
+friend11 = Buddy.create!(
+  user: user1,
+  first_name: Faker::Name.first_name,
+  last_name: Faker::Name.last_name,
+  age: rand(12..90),
+  handicap: rand(0..30),
+  address: Faker::Address.full_address,
+  golf_course: menlo
+)
+
+friend12 = Buddy.create!(
+  user: user1,
+  first_name: Faker::Name.first_name,
+  last_name: Faker::Name.last_name,
+  age: rand(12..90),
+  handicap: rand(0..30),
+  address: Faker::Address.full_address,
+  golf_course: pga_west
 )

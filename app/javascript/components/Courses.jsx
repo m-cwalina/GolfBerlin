@@ -3,7 +3,7 @@ import Course from './Course'
 
 export default function Courses(props) {
   const renderList = () => {
-    return props.courses.map((course, index,) => {
+    return props.courses.map((course, index) => {
       return (
         <div className="course-tiles">
         <Course
