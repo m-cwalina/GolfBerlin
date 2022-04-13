@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SearchBar from '../components/SearchBar';
 import Buddies from '../components/Buddies'
-import '/Users/matthewcwalina/code/m-cwalina/GolfBerlin/app/assets/stylesheets/pages/_javascript.scss';
+import './index.css';
 
 export default function App() {
   const [buddies, setBuddies] = useState([]);
