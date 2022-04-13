@@ -27,7 +27,12 @@
     "turbolinks": "^5.2.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.12",
-    "babel-loader": "^8.2.4"
+    "babel-loader": "^8.2.4",
+    "@babel/core": "^7.17.9",
+    "@babel/plugin-syntax-jsx": "^7.16.7",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "webpack-dev-server": "^3"
   },
   "version": "0.1.0",
   "devDependencies": {
