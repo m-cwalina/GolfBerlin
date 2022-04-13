@@ -26,7 +26,8 @@
     "react_ujs": "^2.6.1",
     "turbolinks": "^5.2.0",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "babel-loader": "^8.2.4"
   },
   "version": "0.1.0",
   "devDependencies": {
@@ -34,7 +35,6 @@
     "@babel/plugin-syntax-jsx": "^7.16.7",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
-    "babel-loader": "^8.2.4",
     "webpack-dev-server": "^3"
   }
 }
