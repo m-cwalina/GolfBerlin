@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import SearchBar from '../components/SearchBar';
-import Buddies from '../components/Buddies'
-import './index.css';
+import Buddies from '../components/Buddies';
 
 export default function App() {
   const [buddies, setBuddies] = useState([]);
