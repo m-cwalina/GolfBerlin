@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Map from '../components/Map'
 import SearchBar2 from '../components/SearchBar2'
 import Courses from '../components/Courses'
-import './index.css';
+import './index.scss';
 
 export default function App() {
   const [courses, setCourses] = useState([]);
