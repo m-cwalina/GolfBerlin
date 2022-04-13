@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Map from '../components/Map'
 import SearchBar2 from '../components/SearchBar2'
 import Courses from '../components/Courses'
-import './index.scss';
+import '/Users/matthewcwalina/code/m-cwalina/GolfBerlin/app/assets/stylesheets/pages/_javascript.scss';
 
 export default function App() {
   const [courses, setCourses] = useState([]);
