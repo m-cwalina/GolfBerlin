@@ -24,7 +24,7 @@ require("channels")
 
 // External imports
 import "bootstrap";
-import "./index.scss";
+import '/Users/matthewcwalina / code / m - cwalina / GolfBerlin / app / javascript / packs / index.scss';
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
