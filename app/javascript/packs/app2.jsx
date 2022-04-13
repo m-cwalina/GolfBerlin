@@ -10,7 +10,7 @@ export default function App() {
   const [selectedCourse, setSelectedCourse] = useState(0);
 
   const Api = async () => {
-    const URL = "api/v1/golf_courses/index";
+    const URL = "https://api/v1/golf_courses/index";
     try {
       let response = await fetch(URL);
       let data = await response.json();
