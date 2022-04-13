@@ -13,6 +13,7 @@
     "antd": "^4.19.3",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "bootstrap": "4.6",
+    "global": "^4.4.0",
     "google-map-react": "^2.1.10",
     "google-maps-react": "^2.0.6",
     "jquery": "^3.6.0",
@@ -24,7 +25,7 @@
     "react_ujs": "^2.6.1",
     "turbolinks": "^5.2.0",
     "webpack": "^5.72.0",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^4.9.2"
   },
   "version": "0.1.0",
   "devDependencies": {
