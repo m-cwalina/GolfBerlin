@@ -13,6 +13,16 @@
   margin-bottom: 50px;
 }
 
+.buddy-info-title:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.buddy-info-title a {
+  text-decoration: none;
+}
+
+
 .buddy-description {
   font-size: 30px;
   color: #9ba4af;
@@ -46,6 +56,15 @@
   font-weight: bold;
   margin-left: 150px;
   margin-top: 150px;
+}
+
+.course-info-title:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.course-info-title a {
+  text-decoration: none;
 }
 
 .course-description {
@@ -82,6 +101,15 @@
   margin: 150px;
 }
 
+.api-info-title:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.api-info-title a {
+  text-decoration: none;
+}
+
 .api-description {
   font-size: 30px;
   color: #9ba4af;
@@ -116,6 +144,11 @@
   margin: 150px;
 }
 
+.review-info-title:hover {
+  color: green;
+  cursor: pointer;
+}
+
 .review-description {
   font-size: 30px;
   color: #9ba4af;
@@ -139,18 +172,24 @@
 
 //sticks
 
-.stick-info {
+.github-info {
   display: flex;
+  align-items: center;
 }
 
-.stick-info-title {
+.github-info-title {
   font-size: 50px;
   color: #ffff;
   font-weight: bold;
   margin: 150px;
 }
 
-.stick-description {
+.github-info-title:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.github-description {
   font-size: 30px;
   color: #9ba4af;
   margin: 150px;
@@ -167,6 +206,11 @@
   color: #ffff;
   font-weight: bold;
   margin-left: 150px;
+}
+
+.merch-info-title:hover {
+  color: green;
+  cursor: pointer;
 }
 
 .merch-description {
@@ -188,4 +232,9 @@
 
 .merch-pic-description-container {
   display: flex;
+}
+
+.course-title:hover {
+  color: green;
+  cursor: pointer;
 }
