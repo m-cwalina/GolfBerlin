@@ -1,3 +1,5 @@
+//buddies
+
 .buddy-info {
   display: flex;
   justify-content: center;
@@ -8,30 +10,66 @@
   color: #ffff;
   font-weight: bold;
   margin: 150px;
+  margin-bottom: 50px;
 }
 
 .buddy-description {
   font-size: 30px;
   color: #9ba4af;
-  margin: 150px;
+  margin: 200px;
 }
 
+.buddy-pic {
+  height: 350px;
+  width: 350px;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 grey,
+  0 6px 20px 0 grey;
+  border-radius: 25px;
+}
+
+.buddy-pic-title-container {
+  display: grid;
+  justify-content: center;
+}
+
+// courses
+
 .course-info {
-  display: flex;
+  display: grid;
+  width: 50%;
 }
 
 .course-info-title {
   font-size: 50px;
   color: #ffff;
   font-weight: bold;
-  margin: 150px;
+  margin-left: 150px;
+  margin-top: 150px;
 }
 
 .course-description {
   font-size: 30px;
   color: #9ba4af;
-  margin: 150px;
+  margin-left: 150px;
+  margin-top: -200px;
+  width: 30%;
 }
+
+.course-pic-description-container {
+  display: flex;
+}
+
+.course-pic {
+  height: 500px;
+  width: 500px;
+  margin-left: 400px;
+  box-shadow: 0 4px 8px 0 grey,
+  0 6px 20px 0 grey;
+  border-radius: 25px;
+}
+
+//api
 
 .api-info {
   display: flex;
@@ -50,6 +88,23 @@
   margin: 150px;
 }
 
+.api-pic {
+  height: 300px;
+  width: 300px;
+  margin-left: 400px;
+  box-shadow: 0 4px 8px 0 grey,
+  0 6px 20px 0 grey;
+  border-radius: 25px;
+  margin: auto;
+  margin-left: 50px;
+}
+
+.api-pic-description-container {
+  display: grid;
+}
+
+//reviews
+
 .review-info {
   display: flex;
 }
@@ -66,6 +121,23 @@
   color: #9ba4af;
   margin: 150px;
 }
+
+.review-pic-description-container {
+  display: grid;
+}
+
+.review-pic {
+  height: 350px;
+  width: 500px;
+  box-shadow: 0 4px 8px 0 grey,
+  0 6px 20px 0 grey;
+  border-radius: 25px;
+  margin: auto;
+}
+
+
+
+//sticks
 
 .stick-info {
   display: flex;
@@ -84,19 +156,36 @@
   margin: 150px;
 }
 
+//merch
+
 .merch-info {
-  display: flex;
+  display: grid;
 }
 
 .merch-info-title {
   font-size: 50px;
   color: #ffff;
   font-weight: bold;
-  margin: 150px;
+  margin-left: 150px;
 }
 
 .merch-description {
   font-size: 30px;
   color: #9ba4af;
-  margin: 150px;
+  margin: 50px 0px 150px 150px;
+}
+
+.merch-pic {
+  height: 450px;
+  width: 300px;
+  box-shadow: 0 4px 8px 0 grey,
+  0 6px 20px 0 grey;
+  border-radius: 25px;
+  margin: auto;
+  margin-bottom: 150px;
+  margin-top: -150px;
+}
+
+.merch-pic-description-container {
+  display: flex;
 }
