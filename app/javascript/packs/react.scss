@@ -62,7 +62,7 @@ a {
   display: inline-grid;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #9ba4af;
   backdrop-filter: blur(15px);
   min-height: 240px;
   max-width: 200px;
@@ -85,6 +85,7 @@ a {
 
 .extra-tile-info {
   margin: auto;
+  color: #ffff;
 }
 
 .buddy-tile-info {
@@ -99,6 +100,7 @@ a {
 .buddy-name {
   font-weight: bold;
   font-size: 20px;
+  color: #ffff;
 }
 
 /* Map for the course section */
