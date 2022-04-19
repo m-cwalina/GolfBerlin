@@ -48,6 +48,7 @@
 .course-info {
   display: grid;
   width: 50%;
+  margin-top: 50px;
 }
 
 .course-info-title {
@@ -75,7 +76,7 @@
   width: 30%;
 }
 
-.course-pic-description-container {
+.course-pic-title-container {
   display: flex;
 }
 
@@ -127,7 +128,7 @@
   margin-left: 50px;
 }
 
-.api-pic-description-container {
+.api-pic-title-container {
   display: grid;
 }
 
@@ -198,7 +199,10 @@
 //merch
 
 .merch-info {
-  display: grid;
+  display: flex;
+  margin-top: 150px;
+  margin-right: 50px;
+  margin-bottom: 100px
 }
 
 .merch-info-title {
@@ -231,7 +235,7 @@
 }
 
 .merch-pic-description-container {
-  display: flex;
+  display: grid;
 }
 
 .course-title:hover {
