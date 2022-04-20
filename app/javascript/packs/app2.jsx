@@ -39,9 +39,6 @@ export default function App() {
     Api();
   }, []);
 
-  useEffect(() => {
-    Map;
-  }, []);
 
   return (
     <div className="App">
