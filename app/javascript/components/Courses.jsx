@@ -5,11 +5,10 @@ export default function Courses(props) {
   const renderList = () => {
     return props.courses.map((course, index) => {
       return (
-        <div className="course-tiles">
+        <div className="course-tiles" key={course.id}>
         <Course
           selectCourse={props.selectCourse}
           course={course}
-          key={course.id}
           index={index}
         />
         </div>
