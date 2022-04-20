@@ -39,6 +39,10 @@ export default function App() {
     Api();
   }, []);
 
+  useEffect(() => {
+    Map;
+  }, []);
+
   return (
     <div className="App">
       <div className="Upper-Scene">
@@ -46,7 +50,7 @@ export default function App() {
       </div>
       <div className="Bottom-Scene">
         <div className="Left-Scene">
-          <Courses courses={searchCourses} selectCourse={selectCourse} selectedCourse={selectedCourse} handleSearch={handleSearch} />
+          <Courses courses={searchCourses} selectCourse={selectCourse} handleSearch={handleSearch} />
         </div>
         <div className="Right-Scene">
           <Map selectedCourse={selectedCourse}/>
