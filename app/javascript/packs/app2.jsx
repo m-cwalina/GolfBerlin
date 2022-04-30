@@ -39,7 +39,6 @@ export default function App() {
     Api();
   }, []);
 
-
   return (
     <div className="App">
       <div className="Upper-Scene">
