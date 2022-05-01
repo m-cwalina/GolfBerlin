@@ -40,10 +40,6 @@ export default function App() {
     Api();
   }, []);
 
-  useEffect(() => {
-    map();
-  }, []);
-
   return (
     <div className="App">
       <div className="Upper-Scene">
