@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import Map from '../components/Map';
 import SearchBar2 from '../components/SearchBar2';
 import Courses from '../components/Courses';
-import { map } from 'jquery';
 
 export default function App() {
   const [courses, setCourses] = useState([]);
