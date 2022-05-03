@@ -7,7 +7,8 @@ export default function SearchBar2({placeholder, wordEntered, clearInput, handle
   return (
     <div className="searchArea">
       <div className="searchBar">
-        <input type="text" placeholder={placeholder} value={wordEntered} onChange={handleSearch} />
+        <label htmlFor="search"></label>
+        <input id='search' type="text" placeholder={placeholder} value={wordEntered} onChange={handleSearch} />
         <div className="searchIcon">
           {handleSearch.length === 0 ? <SearchIcon /> : <CloseIcon id="clearBtn" onClick={clearInput} />}
         </div>

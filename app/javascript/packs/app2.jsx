@@ -6,7 +6,7 @@ import Courses from '../components/Courses';
 export default function App() {
   const [courses, setCourses] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
-  const [selectedCourse, setSelectedCourse] = useState(0);
+  const [selectedCourse, setSelectedCourse] = useState([0]);
 
   const Api = async () => {
     const URL = "/api/v1/golf_courses/index";

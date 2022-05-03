@@ -1,11 +1,11 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 import Course from './Course'
 
 export default function Courses(props) {
   const renderList = () => {
     return props.courses.map((course, index) => {
       return (
-        <div className="course-tiles" key={course.id}>
+        <div className="course-tiles" key={course.location}>
         <Course
           selectCourse={props.selectCourse}
           course={course}
@@ -18,6 +18,7 @@ export default function Courses(props) {
 
   return (
     <div>
+      {console.log(renderList())}
       {renderList()}
     </div>
 

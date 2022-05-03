@@ -3,6 +3,7 @@ import React from 'react';
 export default function Course(props) {
 
   const handleClick = () => {
+    console.log(props.index)
     props.selectCourse(props.index);
   }
 
