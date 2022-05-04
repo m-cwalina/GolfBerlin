@@ -9,14 +9,10 @@ export default function Map(props) {
   };
 
   const center = () => {
-    if(null) {
-      return defaultProps
-    } else {
       return {
         lat: props.selectedCourse.latitude,
         lng: props.selectedCourse.longitude
       }
-    }
   }
 
   return (
