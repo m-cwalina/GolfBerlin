@@ -2,6 +2,7 @@ import React from "react";
 import GoogleMapReact from 'google-map-react';
 import Marker from './Marker'
 
+
 export default function Map(props) {
   const defaultProps = {
     lat: 10.99835602,
@@ -9,10 +10,10 @@ export default function Map(props) {
   };
 
   const center = () => {
-      return {
-        lat: props.selectedCourse.latitude,
-        lng: props.selectedCourse.longitude
-      }
+    return {
+      lat: props.selectedCourse.latitude,
+      lng: props.selectedCourse.longitude
+    }
   }
 
   return (
