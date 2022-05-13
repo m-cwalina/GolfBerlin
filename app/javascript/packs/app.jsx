@@ -30,9 +30,13 @@ export default function App() {
     setWordEntered(event.target.value);
   };
 
+  /*A function that filters through a buddy list with a word entered in the search bar */
+
   const searchBuddies = buddies.filter(
     buddy => buddy.first_name.toLowerCase().includes(wordEntered.toLowerCase())
     )
+
+  /*A function to clear the input in the searchbar*/
 
   const clearInput = () => {
     setWordEntered("");

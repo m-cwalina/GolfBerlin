@@ -1,6 +1,8 @@
 import React from 'react';
 import Course from './Course'
 
+/* A function that iterates through the courses using map and using the index to track each course */
+
 export default function Courses(props) {
   const renderList = () => {
     return props.courses.map((course, index) => {
@@ -18,7 +20,6 @@ export default function Courses(props) {
 
   return (
     <div>
-      {console.log(renderList())}
       {renderList()}
     </div>
 
