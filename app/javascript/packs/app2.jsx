@@ -8,6 +8,7 @@ export default function App() {
   const [wordEntered, setWordEntered] = useState("");
   const [selectedCourse, setSelectedCourse] = useState([0]);
 
+// An API that fetches the data from courses using fetch(URL)
   const Api = async () => {
     const URL = "/api/v1/golf_courses/index";
     try {
@@ -18,23 +19,26 @@ export default function App() {
       console.error(error);
     }
   };
-
+// A function that handles the search event in the searchbar
   const handleSearch = event => {
     setWordEntered(event.target.value);
   };
-
+// A function that filters through the courses in the searchbar
   const searchCourses = courses.filter(
     course => course.name.toLowerCase().includes(wordEntered.toLowerCase())
     )
 
+// A function used to select the course using its index so the map can find the course selected
   const selectCourse = (index) => {
     setSelectedCourse(courses[index])
   }
 
+// Clears the input of the word entered in the searchbar
   const clearInput = () => {
     setWordEntered("");
   }
 
+// A hook used to call the API to run
   useEffect(() => {
     Api();
   }, []);
