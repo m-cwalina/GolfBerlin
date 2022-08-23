@@ -9,7 +9,7 @@ export default function App() {
   /*Here is my API that connects to the API I created in Rails for my buddies*/
 
   const Api = async () => {
-    const URL = "/api/v1/buddies/index";
+    const URL = "/api/v1/buddies";
     try {
       let response = await fetch(URL);
       let data = await response.json();

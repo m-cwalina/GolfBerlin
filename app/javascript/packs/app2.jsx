@@ -10,7 +10,7 @@ export default function App() {
 
 // An API that fetches the data from courses using fetch(URL)
   const Api = async () => {
-    const URL = "/api/v1/golf_courses/index";
+    const URL = "/api/v1/golf_courses";
     try {
       let response = await fetch(URL);
       let data = await response.json();
